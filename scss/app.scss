@@ -69,12 +69,14 @@ html {
 }
 
 .step1__video {
+  // margin-top: -55px;
+  max-width: 800px;
   // margin-top: 50px;
 }
 
 .container {
   background-image: linear-gradient(white 60%, #F2F2F2);
-  min-height: 800px;
+  min-height: 500px;
 }
 
 .header__gradient {
@@ -121,16 +123,22 @@ html {
     color: $red;
     font-size: 51px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bolder;
   }
 
   &__title2 {
     color: $red;
     font-size: 31px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &__title3 {
     color: $red;
     font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &__info {
@@ -761,6 +769,7 @@ input:focus {
   height: 2px;
   width: 100%;
   background-color: $red;
+  margin-bottom: 100px;
 }
 
 .game-steps__container {
@@ -805,6 +814,13 @@ input:focus {
 
 //------------------------- DATA-FORM -----------------------------
 
+input[type="date"] {
+  background-image: url(../assets/images/kalender.svg);
+  background-repeat: no-repeat;
+  background-position: 99%;
+  background-size: 17px;
+}
+
 .data-form__gegevens label{
   letter-spacing: 3px;
   font-size: 11px;
@@ -814,13 +830,31 @@ input:focus {
   margin: 15px 0 5px;
 }
 
+.form__gegevens-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__gegevens__highlight {
+  border: 1px solid #D9D9D9;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 13px;
+  color: #D9D9D9;
+  font-size: 12px;
+}
+
 .data-form__gegevens__input {
   box-shadow: none;
   border: none;
   border-bottom: 1px solid #D9D9D9;
   background-image: url(../assets/images/edit.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  // background-position: right;
+  background-position: 99%;
   background-size: 17px;
 }
 
@@ -884,6 +918,28 @@ input:focus {
     mix-blend-mode: multiply;
   }
 
+}
+
+select {
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  background-image: url(../assets/images/edit.svg);
+  background-repeat: no-repeat;
+  // background-position: right;
+  background-position: 99%;
+  background-size: 17px;
+  background: url(../assets/images/edit.svg) no-repeat right;
+  -webkit-appearance: none;
+  background-size: 17px;
+  background-position: 99%;
+}
+
+
+select:focus {
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
 }
 
 // -------------------------------- PRIVACY --------------------------------
@@ -1038,11 +1094,29 @@ input:focus {
   height: 50px;
 }
 
+.bedankt__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .twitter {
   background-image: url('../assets/images/twitter.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.fb {
+  background-image: url('../assets/images/fb.svg');
+}
+
+.whatsapp {
+  background-image: url('../assets/images/whatsapp.svg');
+}
+
+.mail {
+  background-image: url('../assets/images/mail.svg');
+}
+
+.messenger {
+  background-image: url('../assets/images/messenger.svg');
 }
 
 .opnieuw  {
@@ -1171,30 +1245,27 @@ input:focus {
   color: #333333 !important;
   font-size: 11px;
   box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
-}
-.tooltip > .nub{
-  background-color:#F6F6F6 !important;
-  background: white !important;
+  text-align: center !important;
+  line-height: 15px;
 }
 
-.tooltip {
-  // background: transparent;
-  // border: 3px solid dodgerblue;
-  // border-radius: 3px;
-  > .nub {
-    border: solid 5px;
-    background: red !important;
-    border-color: transparent transparent dodgerblue transparent !important;
-    top: -12px;}
-}
+// .tooltip > .nub{
+//   background-color:#F6F6F6 !important;
+//   background: white !important;
+// }
 
 @media only screen and (max-width: 1025px) {
+
+  .animals {
+    height: 180px;
+  }
+
   .animals__cat {
     position: absolute;
     left: 0;
-    top: -180px;
+    top: -109px;
     background-image: url(../assets/images/cat_tablet.png);
-    height: 295px;
+    height: 262px;
     width: 170px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1314,6 +1385,14 @@ input:focus {
       font-size: 12px;
     }
 
+    .bedankt {
+      height: 140px;
+    }
+
+    .opnieuw {
+      margin-top: 19px;
+    }
+
     .bedankt__title {
       font-size: 16px;
       font-weight: bold;
@@ -1321,3 +1400,59 @@ input:focus {
       text-align: center;
     }
 }
+
+
+
+//
+// .custom-select {
+//   position: relative;
+//   font-family: Arial;
+// }
+// .custom-select select {
+//   display: none; /*hide original SELECT element:*/
+// }
+// .select-selected {
+//   // background-color: DodgerBlue;
+// }
+// /*style the arrow inside the select element:*/
+// .select-selected:after {
+//   position: absolute;
+//   content: "";
+//   top: 14px;
+//   right: 10px;
+//   width: 0;
+//   height: 0;
+//   // border: 6px solid transparent;
+//   // border-color: #fff transparent transparent transparent;
+// }
+// /*point the arrow upwards when the select box is open (active):*/
+// .select-selected.select-arrow-active:after {
+//   border-color: transparent transparent #fff transparent;
+//   top: 7px;
+// }
+// /*style the items (options), including the selected item:*/
+// .select-items div,.select-selected {
+//   color: #333333;
+//   font-size: 14px;
+//   padding: 8px 16px;
+//   // border: 1px solid transparent;
+//   // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+//   cursor: pointer;
+// }
+// /*style items (options):*/
+// .select-items {
+//   position: absolute;
+//   background-color: white;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   z-index: 99;
+//   border: 1px solid #D9D9D9;
+// }
+// /*hide the items when the select box is closed:*/
+// .select-hide {
+//   display: none;
+// }
+// .select-items div:hover, .same-as-selected {
+//   background-color: rgba(0, 0, 0, 0.1);
+// }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <circle id="Oval" fill="#EC001A" cx="21.5" cy="21.5" r="21.5"></circle>
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="21.5" cy="21.5" r="16.5"></circle>
+            <path d="M18.36,22.443 L19.9895238,24.1485 C20.2680952,24.4405 20.6338095,24.586 21,24.586 C21.3657143,24.586 21.7319048,24.4405 22.0104762,24.1485 L23.6128571,22.471 L29.317619,28 L12.6266667,28 L18.36,22.443 Z M21.3380952,23.4405 C21.1547619,23.632 20.8452381,23.632 20.6619048,23.4405 L12.5985714,15 L29.4014286,15 L21.3380952,23.4405 Z M30.047619,15.7355 L30.047619,27.347 L24.2880952,21.7645 L30.047619,15.7355 Z M11.952381,15.7355 L17.6852381,21.7365 L11.952381,27.2925 L11.952381,15.7355 Z M29.5714286,14 L12.4285714,14 C11.6409524,14 11,14.673 11,15.5 L11,27.5 C11,28.3275 11.6409524,29 12.4285714,29 L29.5714286,29 C30.3590476,29 31,28.3275 31,27.5 L31,15.5 C31,14.673 30.3590476,14 29.5714286,14 Z" id="Fill-1" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
