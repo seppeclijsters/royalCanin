@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header__gradient"></div>
+      <div class="row align-center royal__header">
+        <div class="royal__small-logo"></div>
+      </div>
+
+      <div class="step2">
+        <div class="row text-center">
+          <div class="columns step2__question">
+            Heb je een hond of kat?
+          </div>
+        </div>
+
+        <div class="row align-center step2__question">
+          <div class=" medium-5 small-5 step2__answer">
+            <a class="step2__answer__flex step2__answer-selected" href="step3.html">
+              <span class="answer__hond-icon"></span>
+              <span class="answer__hond-text">Hond</span>
+            </a>
+          </div>
+          <div class=" medium-5 small-5 step2__answer">
+              <a class="step2__answer__flex" href="step3.html">
+                <span class="answer__kat-icon"></span>
+                <span class="answer__kat-text">Kat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-center hond">
+          <form class="column medium-8 small-11" action="step4.html">
+            <div class="row">
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb1" onchange="this.form.submit()"/>
+                <label class="hond__ras" for="cb1"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4 ">
+                <input type="radio" id="cb2" onchange="this.form.submit()"/>
+                <label class="hond__chihuaha" for="cb2"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4 ">
+                <input type="radio" id="cb3" onchange="this.form.submit()"/>
+                <label class="hond__herder" for="cb3"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4 ">
+                <input type="radio" id="cb4" onchange="this.form.submit()"/>
+                <label class="hond__teckel" for="cb4"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb5" onchange="this.form.submit()"/>
+                <label class="hond__labrador" for="cb5"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb6" onchange="this.form.submit()"/>
+                <label class="hond__jack" for="cb6"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb7" onchange="this.form.submit()"/>
+                <label class="hond__shih" for="cb7"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb8" onchange="this.form.submit()"/>
+                <label class="hond__bulldog" for="cb8"><div></div></label>
+              </div>
+              <div class="columns large-3 medium-4 small-4">
+                <input type="radio" id="cb9" onchange="this.form.submit()"/>
+                <label class="hond__teckel" for="cb9"><div></div></label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+    </div>
+
+    <div class="animals__container hide-for-small-only">
+      <div class="row animals">
+        <div class="columns small-12">
+          <div class="animals__cat"></div>
+          <div class="animals__dog"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="footer__gradient"></div>
+      <div class="row align-center">
+        <div class="column medium-6 small-12">
+          <div class="row">
+            <div class="column medium-4 small-4 footer__item">
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="column medium-4 small-4 footer__item">
+              <a href="#">Cookie Policy</a>
+            </div>
+            <div class="column medium-4 small-4 footer__item">
+              <a href="#">Ad Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
