@@ -54,14 +54,22 @@
 body {
   line-height: 1;
   font-family: 'Barlow', sans-serif;
+  min-height: 100%;
+  position: relative;
 }
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 
 .container_index {
   min-height: 800px;
 }
 
 .step1__video {
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 
 .container {
@@ -159,7 +167,11 @@ body {
 
 .footer {
   // margin-top: 40px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // position: relative;
   height: 35px;
   background-color: #F6F6F6;
 
@@ -381,10 +393,10 @@ body {
 .animals__dog {
   position: absolute;
   right: 0;
-  top: -164px;
+  top: -26px;
   background-image: url(../assets/images/dog.png);
-  height: 540px;
-  width: 405px;
+  height: 250px;
+  width: 380px;
   background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: multiply;
@@ -614,6 +626,14 @@ input:focus {
   border: 1px solid #D9D9D9;
 }
 
+.schiftingsvraag__tip__highlight-mobile {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333333;
+  padding-bottom: 15px;
+  padding-left: 4px;
+}
 
 // ------------------------------- GAME (step5) -------------------------
 .step5__text {
@@ -710,7 +730,8 @@ input:focus {
   color: #47B800;
   font-size: 29px;
   text-transform: uppercase;
-  opacity: .8;
+  background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .wrong {
@@ -722,7 +743,8 @@ input:focus {
   background-color: white;
   box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
   color: $red;
-  opacity: .8;
+  background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.5);
 
   &__title {
     font-size: 29px;
@@ -1091,7 +1113,7 @@ input:focus {
   color: white;
   font-size: 16px;
   border: none;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   transition: background-color .2s;
 
   &:hover {
@@ -1144,6 +1166,28 @@ input:focus {
   margin-top: 40px;
 }
 
+.tooltip{
+  background-color:#F6F6F6 !important;
+  color: #333333 !important;
+  font-size: 11px;
+  box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
+}
+.tooltip > .nub{
+  background-color:#F6F6F6 !important;
+  background: white !important;
+}
+
+.tooltip {
+  // background: transparent;
+  // border: 3px solid dodgerblue;
+  // border-radius: 3px;
+  > .nub {
+    border: solid 5px;
+    background: red !important;
+    border-color: transparent transparent dodgerblue transparent !important;
+    top: -12px;}
+}
+
 @media only screen and (max-width: 1025px) {
   .animals__cat {
     position: absolute;
@@ -1164,7 +1208,7 @@ input:focus {
     top: 0px;
     background-image: url(../assets/images/dog_tablet.png);
     height: 155px;
-    width: 373px;
+    width: 252px;
     background-repeat: no-repeat;
     background-position: center;
     mix-blend-mode: multiply;
@@ -1176,6 +1220,10 @@ input:focus {
 @media only screen and (max-width: 640px) {
 
     .container {
+      min-height: calc(100vh - 35px);
+    }
+
+    .container_index {
       min-height: inherit;
     }
 
@@ -1259,7 +1307,7 @@ input:focus {
     }
 
     .buttons__style2 {
-      margin-bottom: 80px;
+      // margin-bottom: 80px;
     }
 
     .data-form__privacy label {
