@@ -92,11 +92,39 @@ html {
 }
 
 .step1__video {
+  // position: relative;
+  // z-index: 1;
+  // top: -66px;
+  // max-width: 800px;
   position: relative;
   z-index: 1;
-  top: -66px;
+  bottom: 39px;
   max-width: 800px;
 }
+
+.step1__video-900 {
+  position: absolute;
+  z-index: 1;
+  bottom: 39px;
+  max-width: 1000px;
+  left: calc(50% - 500px);
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .step1__video-900 {
+    position: absolute;
+    z-index: 1;
+    bottom: 39px;
+    max-width: 1000px;
+    left: 0;
+  }
+
+}
+
+
+
 
 .container {
   background-image: linear-gradient(white 60%, #F2F2F2);
@@ -1491,7 +1519,19 @@ select:focus {
     }
 
     .step1__video {
-      position: inherit;
+      // position: inherit;
+      position: absolute;
+      z-index: 1;
+      bottom: 39px;
+      max-width: 800px;
+    }
+
+    .step1__video-900 {
+      position: absolute;
+      // z-index: 1;
+      // bottom: 39px;
+      // max-width: 1000px;
+      // left: 0;
     }
 
     .step1__title {
