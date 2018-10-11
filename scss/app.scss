@@ -69,6 +69,24 @@ html {
 }
 
 
+.language {
+  font-size: 11;
+  margin-top: 17px;
+
+
+  & a {
+    color: #333333;
+    letter-spacing: 1.5px;
+    text-transform: none;
+    text-decoration: none;
+    margin-right: 27px;
+  }
+
+  &__active {
+    font-weight: bold;
+  }
+}
+
 .container_index {
   min-height: 800px;
 }
@@ -147,7 +165,7 @@ html {
   }
 
   &__info {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 18px;
     line-height: 26px
   }
@@ -186,8 +204,12 @@ html {
   bottom: 0;
   left: 0;
   // position: relative;
-  height: 35px;
+  // height: 35px;
   background-color: #F6F6F6;
+
+  &__container {
+    padding: 5px 0 14px 0;
+  }
 
   &__gradient {
     background-image: url('../assets/images/gradient.jpg');
@@ -389,7 +411,7 @@ html {
 
 .animals {
   position: relative;
-  height: 235px;
+  height: 321px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,7 +628,7 @@ label:before {
 
 .schiftings {
   background-color: #F6F6F6;
-  padding: 60px;
+  padding: 60px 0;
   margin-top: 50px;
   // height: 300px;
   // display: flex;
@@ -659,7 +681,7 @@ input:focus {
 }
 
 .step4__form {
-  margin: 80px 0;
+  // margin: 80px 0;
 }
 
 .step4__question {
@@ -718,7 +740,6 @@ input:focus {
     margin-right: auto;
     mix-blend-mode: multiply;
   }
-
 }
 
 
@@ -767,7 +788,7 @@ input:focus {
   font-size: 29px;
   text-transform: uppercase;
   background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .wrong {
@@ -780,7 +801,7 @@ input:focus {
   box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
   color: $red;
   background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 
   &__title {
     font-size: 29px;
@@ -791,6 +812,10 @@ input:focus {
   &__text {
     font-size: 19px;
   }
+}
+
+.game-steps-container {
+  height: 130px;
 }
 
 .game-steps {
@@ -886,10 +911,10 @@ input:focus {
 
 .pop-up {
   position: absolute;
-  top: 76px;
+  top: 44px;
   z-index: 2;
   width: 90%;
-  height: 84%;
+  height: 88%;
   background: #fff;
   background: rgba(255,255,255,0.95);
   box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
@@ -910,6 +935,11 @@ input:focus {
   &__text {
     font-size: 16px;
     margin: 30px 0;
+  }
+
+  & p {
+    margin-bottom: .5rem;
+    line-height: 25px;
   }
 }
 
@@ -1167,7 +1197,7 @@ select:focus {
 // ------------------------------- BEDANKT -------------------------
 .schiftings {
   background-color: #F6F6F6;
-  padding: 60px;
+  padding: 60px 0;
 
   &__title {
     color: #333333;
@@ -1370,7 +1400,7 @@ select:focus {
 }
 
 .text {
-  margin: 55px 0 25px 0;
+  margin: 24px 0 25px 0;
   color: #333333;
   font-size: 18px;
   line-height: 26px;
@@ -1444,6 +1474,10 @@ select:focus {
       min-height: calc(100vh - 35px);
     }
 
+    .container-special {
+      min-height: inherit;
+    }
+
     .container_index {
       min-height: inherit;
     }
@@ -1454,6 +1488,10 @@ select:focus {
 
     .royal__big-logo {
       margin-bottom: 30px;
+    }
+
+    .step1__video {
+      position: inherit;
     }
 
     .step1__title {
@@ -1538,7 +1576,7 @@ select:focus {
     }
 
     .bedankt {
-      height: 140px;
+      padding: 50px 0;
     }
 
     .opnieuw {
@@ -1551,64 +1589,20 @@ select:focus {
       color: #333333;
       text-align: center;
     }
+
+
+    .ras {
+      height: 105px;
+    }
+
+    :checked + .ras {
+      height: 105px
+    }
 }
 
 
 .links {
-  height: 60px;
+  background-color: white;
+  margin-top: 50px;
+  height: 85px;
 }
-
-
-//
-// .custom-select {
-//   position: relative;
-//   font-family: Arial;
-// }
-// .custom-select select {
-//   display: none; /*hide original SELECT element:*/
-// }
-// .select-selected {
-//   // background-color: DodgerBlue;
-// }
-// /*style the arrow inside the select element:*/
-// .select-selected:after {
-//   position: absolute;
-//   content: "";
-//   top: 14px;
-//   right: 10px;
-//   width: 0;
-//   height: 0;
-//   // border: 6px solid transparent;
-//   // border-color: #fff transparent transparent transparent;
-// }
-// /*point the arrow upwards when the select box is open (active):*/
-// .select-selected.select-arrow-active:after {
-//   border-color: transparent transparent #fff transparent;
-//   top: 7px;
-// }
-// /*style the items (options), including the selected item:*/
-// .select-items div,.select-selected {
-//   color: #333333;
-//   font-size: 14px;
-//   padding: 8px 16px;
-//   // border: 1px solid transparent;
-//   // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-//   cursor: pointer;
-// }
-// /*style items (options):*/
-// .select-items {
-//   position: absolute;
-//   background-color: white;
-//   top: 100%;
-//   left: 0;
-//   right: 0;
-//   z-index: 99;
-//   border: 1px solid #D9D9D9;
-// }
-// /*hide the items when the select box is closed:*/
-// .select-hide {
-//   display: none;
-// }
-// .select-items div:hover, .same-as-selected {
-//   background-color: rgba(0, 0, 0, 0.1);
-// }
