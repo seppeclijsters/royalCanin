@@ -68,6 +68,11 @@ html {
   box-sizing: border-box;
 }
 
+.step1__container {
+  position: relative;
+  z-index: 10;
+}
+
 
 .language {
   font-size: 11;
@@ -1525,6 +1530,14 @@ select:focus {
       bottom: 39px;
       max-width: 800px;
     }
+
+    // .step1__video-700 {
+    //   position: relative;
+    //   // z-index: 1;
+    //   // bottom: 39px;
+    //   // max-width: 1000px;
+    //   // left: 0;
+    // }
 
     .step1__video-900 {
       position: absolute;

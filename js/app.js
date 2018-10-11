@@ -34,3 +34,17 @@ function myFunction2(y) {
 var y = window.matchMedia("(max-height: 900px)")
 myFunction2(y) // Call listener function at run time
 y.addListener(myFunction2) // Attach listener function on state changes
+
+
+// function myFunction3(z) {
+//     if (z.matches) { // If media query matches
+//           video.classList.add('step1__video-700');
+//           video.classList.remove('step1__video');
+//           console.log(`kleiner dan 500`);
+//     } else {
+//     }
+// }
+//
+// var z = window.matchMedia("(max-height: 600px)")
+// myFunction3(z) // Call listener function at run time
+// z.addListener(myFunction3) // Attach listener function on state changes
