@@ -367,7 +367,7 @@ html {
 }
 
 .hond__ras {
-  background-image: url(../assets/images/ras.png);
+  background-image: url(../assets/images/hond/ras.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -376,7 +376,7 @@ html {
 }
 
 .hond__chihuaha {
-  background-image: url(../assets/images/chihuahua.png);
+  background-image: url(../assets/images/hond/chihuahua.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ html {
 }
 
 .hond__herder {
-  background-image: url(../assets/images/duitse_herder.png);
+  background-image: url(../assets/images/hond/duitse_herder.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -394,7 +394,7 @@ html {
 }
 
 .hond__teckel {
-  background-image: url(../assets/images/teckel.png);
+  background-image: url(../assets/images/hond/teckel.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -403,7 +403,7 @@ html {
 }
 
 .hond__labrador {
-  background-image: url(../assets/images/labrador.png);
+  background-image: url(../assets/images/hond/labrador.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -412,7 +412,7 @@ html {
 }
 
 .hond__jack {
-  background-image: url(../assets/images/jack.png);
+  background-image: url(../assets/images/hond/jack.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ html {
 }
 
 .hond__shih {
-  background-image: url(../assets/images/shih.png);
+  background-image: url(../assets/images/hond/shih.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -430,7 +430,7 @@ html {
 }
 
 .hond__bulldog {
-  background-image: url(../assets/images/bulldog.png);
+  background-image: url(../assets/images/hond/bulldog.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -543,7 +543,7 @@ label:before {
   // width: 100%;
   // height: auto;
   // background-position: center;
-  background-image: url(../assets/images/ras_selected.png);
+  background-image: url(../assets/images/hond/ras_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -552,7 +552,7 @@ label:before {
 }
 
 :checked + .hond__chihuaha {
-  background-image: url(../assets/images/chihuahua_selected.png);
+  background-image: url(../assets/images/hond/chihuahua_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -562,7 +562,7 @@ label:before {
 
 
 :checked + .hond__herder {
-  background-image: url(../assets/images/duitse_herder_selected.png);
+  background-image: url(../assets/images/hond/duitse_herder_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -571,7 +571,7 @@ label:before {
 }
 
 :checked + .hond__teckel {
-  background-image: url(../assets/images/teckel_selected.png);
+  background-image: url(../assets/images/hond/teckel_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -580,7 +580,7 @@ label:before {
 }
 
 :checked + .hond__labrador {
-  background-image: url(../assets/images/labrador_selected.png);
+  background-image: url(../assets/images/hond/labrador_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -589,7 +589,7 @@ label:before {
 }
 
 :checked + .hond__jack {
-  background-image: url(../assets/images/jack_selected.png);
+  background-image: url(../assets/images/hond/jack_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -598,7 +598,7 @@ label:before {
 }
 
 :checked + .hond__shih {
-  background-image: url(../assets/images/shih_selected.png);
+  background-image: url(../assets/images/hond/shih_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -607,7 +607,7 @@ label:before {
 }
 
 :checked + .hond__bulldog {
-  background-image: url(../assets/images/bulldog_selected.png);
+  background-image: url(../assets/images/hond/bulldog_selected.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -968,11 +968,18 @@ input:focus {
   &__text {
     font-size: 16px;
     margin: 30px 0;
+
   }
 
   & p {
     margin-bottom: .5rem;
     line-height: 25px;
+
+    & a {
+      text-decoration: none;
+      text-decoration: underline;
+      color: #333333;
+    }
   }
 }
 
@@ -1441,7 +1448,7 @@ select:focus {
 
 .margin {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
 }
 
 .tooltip{
@@ -1592,7 +1599,20 @@ select:focus {
 
     .game__time {
       font-size: 24px;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
+      margin-top: 4px;
+    }
+
+    .game-steps-container {
+      height: 80px;
+    }
+
+    .game-steps {
+      margin-bottom: 0px;
+    }
+
+    .container__step5 {
+      min-height: calc(100vh - 80px);
     }
 
     .wrong__text {
@@ -1650,6 +1670,10 @@ select:focus {
 
     :checked + .ras {
       height: 105px
+    }
+
+    .hond {
+      margin-top: 0;
     }
 }
 
