@@ -1,7 +1,7 @@
 $(document).foundation();
-
+//
 var video = document.querySelector('.step1__video');
-
+//
 if (window.innerHeight > 900) {
     video.classList.add('step1__video-900')
 }

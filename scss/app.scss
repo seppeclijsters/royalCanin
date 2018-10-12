@@ -110,7 +110,7 @@ html {
 .step1__video-900 {
   position: absolute;
   z-index: 1;
-  bottom: 39px;
+  bottom: 40px;
   max-width: 1000px;
   left: calc(50% - 500px);
 }
@@ -1675,6 +1675,39 @@ select:focus {
     .hond {
       margin-top: 0;
     }
+}
+
+@media only screen and (max-height: 600px) and (max-width: 640px) {
+  // .step1__video {
+  //   position: relative !important;
+  //   z-index: 1;
+  //   bottom: 39px;
+  //   max-width: 800px;
+  // }
+}
+
+@media  screen and  (max-width: 361px)  {
+   @media  screen and  (max-height: 700px)  {
+     .step1__video {
+       margin-top: 40px;
+       position: relative;
+       z-index: 1;
+       bottom: 39px;
+       max-width: 800px;
+     }
+   }
+}
+
+@media  screen and  (max-width: 400px)  {
+   @media  screen and  (max-height: 700px)  {
+     .step1__video {
+       margin-top: 40px;
+       position: relative;
+       z-index: 1;
+       bottom: 39px;
+       max-width: 800px;
+     }
+   }
 }
 
 
