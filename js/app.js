@@ -10,7 +10,7 @@ function myFunction(x) {
     if (x.matches && $('.step1').length) { // If media query matches
           video.classList.add('step1__video-900');
           video.classList.remove('step1__video');
-          console.log(`groter dan 900`);
+          console.log('groter dan 900');
     } else {
     }
 }
@@ -25,7 +25,7 @@ function myFunction2(y) {
     if (y.matches && $('.step1').length) { // If media query matches
           video.classList.remove('step1__video-900');
           video.classList.add('step1__video');
-          console.log(`kleiner dan 900`);
+          console.log('kleiner dan 900');
     } else {
     }
 }
@@ -35,15 +35,15 @@ myFunction2(y) // Call listener function at run time
 y.addListener(myFunction2) // Attach listener function on state changes
 
 
-// function myFunction3(z) {
-//     if (z.matches) { // If media query matches
-//           video.classList.add('step1__video-700');
-//           video.classList.remove('step1__video');
-//           console.log(`kleiner dan 500`);
-//     } else {
-//     }
-// }
-//
-// var z = window.matchMedia("(max-height: 600px)")
-// myFunction3(z) // Call listener function at run time
-// z.addListener(myFunction3) // Attach listener function on state changes
+
+
+document.addEventListener(`click`, e => {
+  if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
+  && $(".pop-up").has(e.target).length === 0) // ... nor a descendant of the container
+  {
+    if($('.pop-up').length) {
+      var popup = document.querySelector('.pop-up');
+      popup.classList.add('hide');
+    }
+ }
+});
