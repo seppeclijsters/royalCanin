@@ -376,6 +376,7 @@ html {
 }
 
 .hond__chihuaha {
+  background: url('../assets/images/hond/chihuahua__selected.png') 0 0 no-repeat;
   background-image: url(../assets/images/hond/chihuahua.png);
   width: 100%;
   height: 157px;
@@ -1677,16 +1678,7 @@ select:focus {
     }
 }
 
-@media only screen and (max-height: 600px) and (max-width: 640px) {
-  // .step1__video {
-  //   position: relative !important;
-  //   z-index: 1;
-  //   bottom: 39px;
-  //   max-width: 800px;
-  // }
-}
-
-@media  screen and  (max-width: 361px)  {
+@media  screen and  (max-width: 440px)  {
    @media  screen and  (max-height: 700px)  {
      .step1__video {
        margin-top: 40px;
@@ -1698,21 +1690,49 @@ select:focus {
    }
 }
 
-@media  screen and  (max-width: 400px)  {
+@media  screen and  (max-width: 365px)  {
    @media  screen and  (max-height: 700px)  {
-     .step1__video {
-       margin-top: 40px;
-       position: relative;
-       z-index: 1;
-       bottom: 39px;
-       max-width: 800px;
+     .royal__small-logo {
+       margin-top: 10px;
+       margin-bottom: 24px;
+     }
+
+     .royal__big-logo {
+       margin-bottom: 25px;
+       margin-top: 18px;
+     }
+
+     .step1__button {
+       margin-top: 25px;
      }
    }
 }
+
+@media  screen and  (min-width: 1050px)  {
+   @media  screen and  (max-height: 900px)  {
+     .royal__big-logo {
+       margin-top: 25px;
+       margin-bottom: 25px;
+     }
+
+     .step1__button {
+      margin-top: 26px;
+    }
+ }
+}
+
+
 
 
 .links {
   background-color: white;
   margin-top: 50px;
   height: 85px;
+}
+
+.pictures {
+  // background-image: url(../assets/images/hond/chihuahua.png);
+  // background-image: url(../assets/images/hond/labrador.png);
+  // background-image: url(../assets/images/hond/bulldog.png);
+  // // display: none;
 }

@@ -1,14 +1,13 @@
 $(document).foundation();
 //
-var video = document.querySelector('.step1__video');
-//
-if (window.innerHeight > 900) {
-    video.classList.add('step1__video-900')
+if ($('.step1').length) {
+  var video = document.querySelector('.step1__video');
 }
 
 
+
 function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches && $('.step1').length) { // If media query matches
           video.classList.add('step1__video-900');
           video.classList.remove('step1__video');
           console.log(`groter dan 900`);
@@ -23,7 +22,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 function myFunction2(y) {
-    if (y.matches) { // If media query matches
+    if (y.matches && $('.step1').length) { // If media query matches
           video.classList.remove('step1__video-900');
           video.classList.add('step1__video');
           console.log(`kleiner dan 900`);
