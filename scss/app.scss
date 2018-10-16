@@ -56,34 +56,18 @@
 
 @import 'icons';
 
-.preload__images {
-  width: 0px;
-  height: 0px;
-  display: inline;
-  background: url('../assets/images/hond/jack_russell_nl.svg') 0 0 no-repeat;
-  background: url('../assets/images/hond/shih_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/jack_russell_selected_nl.svg') 0 0 no-repeat;
-  background: url('../assets/images/hond/bulldog_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/chihuahua_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/jack_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/teckel_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/beagle_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/ras_selected_nl.png') 0 0 no-repeat;
-  background: url('../assets/images/hond/labrador_selected_nl.png') 0 0 no-repeat;
-}
-
 .preload__jack {
   width: 0px;
   height: 0px;
   display: inline;
-  background: url('../assets/images/hond/jack_russell_selected_nl.svg') 0 0 no-repeat;
+  background: url('../assets/images/hond/jack_russell_selected_nl.png') 0 0 no-repeat;
 }
 
 .preload__beagle {
   width: 0px;
   height: 0px;
   display: inline;
-  background: url('../assets/images/hond/beagle_selected_nl.svg') 0 0 no-repeat;
+  background: url('../assets/images/hond/beagle_selected_nl.png') 0 0 no-repeat;
 }
 
 .preload__chihuahua {
@@ -98,6 +82,75 @@
   height: 0px;
   display: inline;
   background: url('../assets/images/hond/duitse_herder_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__teckel {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/hond/teckel_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__labrador {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/hond/labrador_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__shih {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/hond/shih_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__bulldog {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/hond/bulldog_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__rasKat {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/ras_selected_nl.png') 0 0 no-repeat;
+}
+.preload__korthaar {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/korthaar_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__main {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/main_coon_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__siamees {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/siamees_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__ragdoll {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/ragdoll_selected_nl.png') 0 0 no-repeat;
+}
+
+.preload__boskat {
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background: url('../assets/images/kat/boskat_selected_nl.png') 0 0 no-repeat;
 }
 
 body {
@@ -456,7 +509,7 @@ html {
 }
 
 .hond__jack {
-  background-image: url(../assets/images/hond/jack_russell_nl.svg);
+  background-image: url(../assets/images/hond/jack_nl.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -483,7 +536,7 @@ html {
 }
 
 .hond__beagle {
-  background-image: url(../assets/images/hond/beagle_nl.svg);
+  background-image: url(../assets/images/hond/beagle_nl.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -701,7 +754,7 @@ label:before {
 }
 
 :checked + .hond__jack {
-  background-image: url(../assets/images/hond/jack_russell_selected_nl.svg);
+  background-image: url(../assets/images/hond/jack_selected_nl.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
@@ -728,7 +781,7 @@ label:before {
 }
 
 :checked + .hond__beagle {
-  background-image: url(../assets/images/hond/beagle_selected_nl.svg);
+  background-image: url(../assets/images/hond/beagle_selected_nl.png);
   width: 100%;
   height: 157px;
   background-repeat: no-repeat;
