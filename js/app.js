@@ -35,15 +35,51 @@ myFunction2(y) // Call listener function at run time
 y.addListener(myFunction2) // Attach listener function on state changes
 
 
+var popup = document.querySelector('.pop-up');
+var popup_is_open = false;
+
+if ( console.log('code wanneer pop-up tevoorschijn moet komen') && popup_is_open ) {
+  popup.classList.remove('hide');
+  popup.classList.add('show');
+  popup_is_open = false;
+  console.log('show');
+}
 
 
 document.addEventListener(`click`, e => {
   if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
   && $(".pop-up").has(e.target).length === 0) // ... nor a descendant of the container
-  {
-    if($('.pop-up').length) {
-      var popup = document.querySelector('.pop-up');
-      popup.classList.add('hide');
-    }
- }
+    {
+      if($('.pop-up').length && !popup_is_open) {
+        popup.classList.remove('show');
+        popup.classList.add('hide');
+        popup_is_open = true;
+        console.log('hide');
+      }
+   }
+
 });
+
+//
+// document.addEventListener(`click`, e => {
+//   if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
+//   && $(".pop-up").has(e.target).length === 0) // ... nor a descendant of the container
+//     {
+//       if($('.pop-up').length && !popup_is_open) {
+//         popup.classList.remove('show');
+//         popup.classList.add('hide');
+//         popup_is_open = true;
+//         console.log('hide');
+//       }
+//    }
+//
+//    if ($(".animals").is(e.target)) // if the target of the click isn't the container...
+//      {
+//      if ( $(".animals").has(e.target).length === 0 && popup_is_open ) {
+//        popup.classList.remove('hide');
+//        popup.classList.add('show');
+//        popup_is_open = false;
+//        console.log('show');
+//      }
+//    }
+// });
