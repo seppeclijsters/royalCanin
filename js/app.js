@@ -59,6 +59,25 @@ document.addEventListener(`click`, e => {
    }
 
 });
+//
+// document.addEventListener(`click`, e => {
+//   if (!$(".tooltip").is(e.target) // if the target of the click isn't the container...
+//   && $(".tooltip").has(e.target).length === 0) // ... nor a descendant of the container
+//     {
+//       if($('.tooltip').length) {
+//         var tooltip = document.querySelector('.tooltip');
+//
+//         if (tooltip.dataset.attr.contains('aria-hidden') == true) {
+//
+//           // tooltip.classList.add('hide')
+//           console.log('true tooltip');
+//         }
+//         // popup.classList.remove('show');
+//
+//       }
+//    }
+//
+// });
 
 //
 // document.addEventListener(`click`, e => {
