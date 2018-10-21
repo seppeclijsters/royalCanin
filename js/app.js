@@ -1,10 +1,11 @@
 $(document).foundation();
-//
+
+
+// MP4 CLIP CHANGES TO BOTTOM WHEN SCREEN TOO SMALL
+
 if ($('.step1').length) {
   var video = document.querySelector('.step1__video');
 }
-
-
 
 function myFunction(x) {
     if (x.matches && $('.step1').length) { // If media query matches
@@ -45,6 +46,7 @@ if ( console.log('code wanneer pop-up tevoorschijn moet komen') && popup_is_open
   console.log('show');
 }
 
+// close pop-up when clicking next to pop-up
 
 document.addEventListener(`click`, e => {
   if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
@@ -59,46 +61,17 @@ document.addEventListener(`click`, e => {
    }
 
 });
-//
-// document.addEventListener(`click`, e => {
-//   if (!$(".tooltip").is(e.target) // if the target of the click isn't the container...
-//   && $(".tooltip").has(e.target).length === 0) // ... nor a descendant of the container
-//     {
-//       if($('.tooltip').length) {
-//         var tooltip = document.querySelector('.tooltip');
-//
-//         if (tooltip.dataset.attr.contains('aria-hidden') == true) {
-//
-//           // tooltip.classList.add('hide')
-//           console.log('true tooltip');
-//         }
-//         // popup.classList.remove('show');
-//
-//       }
-//    }
-//
-// });
 
-//
-// document.addEventListener(`click`, e => {
-//   if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
-//   && $(".pop-up").has(e.target).length === 0) // ... nor a descendant of the container
-//     {
-//       if($('.pop-up').length && !popup_is_open) {
-//         popup.classList.remove('show');
-//         popup.classList.add('hide');
-//         popup_is_open = true;
-//         console.log('hide');
-//       }
-//    }
-//
-//    if ($(".animals").is(e.target)) // if the target of the click isn't the container...
-//      {
-//      if ( $(".animals").has(e.target).length === 0 && popup_is_open ) {
-//        popup.classList.remove('hide');
-//        popup.classList.add('show');
-//        popup_is_open = false;
-//        console.log('show');
-//      }
-//    }
-// });
+// SMOOTHSCROLL BREED SELECTION
+
+if ($('.ras').length) {
+  var breed_selected = document.querySelectorAll('.ras');
+
+  for (var i = 0; i < breed_selected.length; i++) {
+      breed_selected[i].addEventListener('click', function(event) {
+        $('html, body').animate({
+            scrollTop: $(".animals").offset().top
+        }, 800);
+      });
+  }
+}
