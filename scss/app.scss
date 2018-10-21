@@ -1082,15 +1082,15 @@ input:focus {
 }
 
 .game__button__next {
+  padding: 1px 23px;
   position: absolute;
   z-index: 2;
   top: calc(50% - 20px);
-  left: calc(50% - 75px);
   background-color: #EC001A;
   border-radius: 50px;
-  height: 40px;
-  width: 150px;
   transition: background-color .2s;
+  transform: translateX(-50%);
+  left: 50%;
 
   & a {
     display: inline-block;
@@ -1629,16 +1629,29 @@ select:focus {
 }
 
 .buttons__style2 {
+  // cursor: pointer;
+  // width: 100%;
+  // max-width: 185px;
+  // background-color: #EC001A;
+  // height: 40px;
+  // border-radius: 30px;
+  // color: white;
+  // font-size: 16px;
+  // border: none;
+  // // margin-bottom: 30px;
+  // transition: background-color .2s;
+
+
+  padding: 5px 20px;
   cursor: pointer;
-  width: 100%;
-  max-width: 185px;
+  /* width: 100%; */
+  min-width: 140px;
   background-color: #EC001A;
-  height: 40px;
+  /* height: 40px; */
   border-radius: 30px;
   color: white;
   font-size: 16px;
   border: none;
-  // margin-bottom: 30px;
   transition: background-color .2s;
 
   &:hover {
