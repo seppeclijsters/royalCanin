@@ -70,7 +70,7 @@
   background: url('../assets/images/hond/jack_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__jack {
+.preload__jack-fr {
   background: url('../assets/images/hond/jack_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -81,7 +81,7 @@
   background: url('../assets/images/hond/beagle_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__beagle {
+.preload__beagle-fr {
   background: url('../assets/images/hond/beagle_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -92,7 +92,7 @@
   background: url('../assets/images/hond/chihuahua_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__chihuahua {
+.preload__chihuahua-fr {
   background: url('../assets/images/hond/chihuahua_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -103,7 +103,7 @@
   background: url('../assets/images/hond/duitse_herder_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__herder {
+.preload__herder-fr {
   background: url('../assets/images/hond/duitse_herder_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -114,7 +114,7 @@
   background: url('../assets/images/hond/teckel_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__teckel {
+.preload__teckel-fr {
   background: url('../assets/images/hond/teckel_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -125,7 +125,7 @@
   background: url('../assets/images/hond/labrador_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__labrador {
+.preload__labrador-fr {
   background: url('../assets/images/hond/labrador_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -136,7 +136,7 @@
   background: url('../assets/images/hond/shih_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__shih {
+.preload__shih-fr {
   background: url('../assets/images/hond/shih_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -147,7 +147,7 @@
   background: url('../assets/images/hond/bulldog_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__bulldog {
+.preload__bulldog-fr {
   background: url('../assets/images/hond/bulldog_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -158,7 +158,7 @@
   background: url('../assets/images/kat/ras_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__rasKat {
+.preload__rasKat-fr {
   background: url('../assets/images/kat/ras_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -169,7 +169,7 @@
   background: url('../assets/images/kat/korthaar_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__korthaar {
+.preload__korthaar-fr {
   background: url('../assets/images/kat/korthaar_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -180,7 +180,7 @@
   background: url('../assets/images/kat/main_coon_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__main {
+.preload__main-fr {
   background: url('../assets/images/kat/main_coon_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -191,7 +191,7 @@
   background: url('../assets/images/kat/siamees_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__siamees {
+.preload__siamees-fr {
   background: url('../assets/images/kat/siamees_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -202,7 +202,7 @@
   background: url('../assets/images/kat/ragdoll_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__ragdoll {
+.preload__ragdoll-fr {
   background: url('../assets/images/kat/ragdoll_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -213,7 +213,7 @@
   background: url('../assets/images/kat/boskat_selected_nl.png') 0 0 no-repeat;
 }
 
-.loc-fr .preload__boskat {
+.preload__boskat-fr {
   background: url('../assets/images/kat/boskat_selected_fr.png') 0 0 no-repeat;
 }
 
@@ -290,8 +290,6 @@ html {
 }
 
 
-
-
 .container {
   background-image: linear-gradient(white 60%, #F2F2F2);
   min-height: 500px;
@@ -313,7 +311,7 @@ html {
 .royal__small-logo {
   margin-top: 40px;
   margin-bottom: 55px;
-  background-image: url(../assets/images/logo_small.svg);
+  background-image: url(../assets/images/logo_small.png);
   background-size: contain;
   background-position: center;
   width: 80px;
@@ -324,7 +322,7 @@ html {
 .royal__big-logo {
   margin-top: 40px;
   margin-bottom: 40px;
-  background-image: url(../assets/images/logo.svg);
+  background-image: url(../assets/images/logo.png);
   background-size: contain;
   background-position: center;
   width: 100%;
@@ -534,8 +532,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__ras {
+.hond__ras-fr {
   background-image: url(../assets/images/hond/ras_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__chihuaha {
@@ -546,8 +549,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__chihuaha {
+.hond__chihuaha-fr {
   background-image: url(../assets/images/hond/chihuahua_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__herder {
@@ -558,8 +566,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__herder {
+.hond__herder-fr {
   background-image: url(../assets/images/hond/duitse_herder_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__teckel {
@@ -570,8 +583,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__teckel {
+.hond__teckel-fr {
   background-image: url(../assets/images/hond/teckel_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__labrador {
@@ -582,8 +600,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__labrador {
+.hond__labrador-fr {
   background-image: url(../assets/images/hond/labrador_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__jack {
@@ -594,8 +617,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__jack {
+.hond__jack-fr {
   background-image: url(../assets/images/hond/jack_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__shih {
@@ -606,8 +634,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__shih {
+.hond__shih-fr {
   background-image: url(../assets/images/hond/shih_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__bulldog {
@@ -618,8 +651,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__bulldog {
+.hond__bulldog-fr {
   background-image: url(../assets/images/hond/bulldog_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hond__beagle {
@@ -630,8 +668,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .hond__beagle {
+.hond__beagle-fr {
    background-image: url(../assets/images/hond/beagle_fr.png);
+   width: 100%;
+   height: 157px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
 }
 
 .kat__ras {
@@ -642,8 +685,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__ras {
+.kat__ras-fr {
   background-image: url(../assets/images/kat/ras_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .kat__korthaar {
@@ -654,8 +702,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__korthaar {
+.kat__korthaar-fr {
   background-image: url(../assets/images/kat/korthaar_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .kat__main {
@@ -666,8 +719,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__main {
+.kat__main-fr {
   background-image: url(../assets/images/kat/main_coon_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .kat__siamees {
@@ -678,8 +736,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__siamees {
+.kat__siamees-fr {
   background-image: url(../assets/images/kat/siamees_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .kat__ragdoll {
@@ -690,8 +753,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__ragdoll {
+.kat__ragdoll-fr {
   background-image: url(../assets/images/kat/ragdoll_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .kat__boskat {
@@ -702,8 +770,13 @@ html {
   background-position: center;
   background-size: contain;
 }
-.loc-fr .kat__boskat {
+.kat__boskat-fr {
   background-image: url(../assets/images/kat/boskat_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .animals__container {
@@ -804,13 +877,6 @@ label:before {
 }
 
 :checked + .hond__ras {
-  // background-image: url(../assets/images/ras_selected.png);
-  // // transform: scale(0.9);
-  // // box-shadow: 0 0 5px #333;
-  // z-index: -1;
-  // width: 100%;
-  // height: auto;
-  // background-position: center;
   background-image: url(../assets/images/hond/ras_selected_nl.png);
   width: 100%;
   height: 157px;
@@ -945,17 +1011,145 @@ label:before {
   background-position: center;
   background-size: contain;
 }
+// FRANSE SELECTIE
 
-//
-// .hond__chihuaha:checked {
-//   background-image: url(../assets/images/ras_selected.png);
-//   // transform: scale(0.9);
-//   // box-shadow: 0 0 5px #333;
-//   z-index: -1;
-//   width: 100%;
-//   height: auto;
-//   background-position: center;
-// }
+
+:checked + .hond__ras-fr {
+  background-image: url(../assets/images/hond/ras_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__chihuaha-fr {
+  background-image: url(../assets/images/hond/chihuahua_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+:checked + .hond__herder-fr {
+  background-image: url(../assets/images/hond/duitse_herder_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__teckel-fr {
+  background-image: url(../assets/images/hond/teckel_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__labrador-fr {
+  background-image: url(../assets/images/hond/labrador_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__jack-fr {
+  background-image: url(../assets/images/hond/jack_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__shih-fr {
+  background-image: url(../assets/images/hond/shih_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__bulldog-fr {
+  background-image: url(../assets/images/hond/bulldog_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .hond__beagle-fr {
+  background-image: url(../assets/images/hond/beagle_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__ras-fr {
+  background-image: url(../assets/images/kat/ras_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__korthaar-fr {
+  background-image: url(../assets/images/kat/korthaar_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__main-fr {
+  background-image: url(../assets/images/kat/main_coon_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__siamees-fr {
+  background-image: url(../assets/images/kat/siamees_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__ragdoll-fr {
+  background-image: url(../assets/images/kat/ragdoll_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+:checked + .kat__boskat-fr {
+  background-image: url(../assets/images/kat/boskat_selected_fr.png);
+  width: 100%;
+  height: 157px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 
 // ------------------------------- TIMING -------------------------
 
@@ -1026,6 +1220,11 @@ input {
 
 input:focus {
   color: #333333;
+}
+
+input[type=submit]:focus {
+  outline: 0;
+  color: white;
 }
 
 .schiftings__input {
@@ -1821,6 +2020,10 @@ select:focus {
   margin-bottom: 75px;
 }
 
+.margin__quiz-button {
+  margin-top: 13px;
+}
+
 .tooltip{
   background-color:#F6F6F6 !important;
   color: #333333 !important;
@@ -1832,7 +2035,7 @@ select:focus {
 
 .error {
   color: #F79D40;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .error-input {
@@ -2103,4 +2306,3 @@ select:focus {
   margin-top: 50px;
   height: 85px;
 }
-
