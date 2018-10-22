@@ -2019,7 +2019,7 @@ select:focus {
 .margin {
   // margin-top: 40px;
   margin-top: 13px;
-  margin-bottom: 75px;
+  // margin-bottom: 75px;
 }
 
 .margin__quiz-button {
@@ -2309,4 +2309,9 @@ select:focus {
   .ras {
     height: 80px !important;
   }
+}
+
+.tooltip {
+    // position: absolute !important;
+    // left: 67.890625px !important;
 }
