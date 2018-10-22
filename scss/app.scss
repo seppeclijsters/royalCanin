@@ -786,7 +786,8 @@ html {
 
 .animals {
   position: relative;
-  height: 321px;
+  // height: 321px;
+  padding: 50px 0 79px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2252,6 +2253,10 @@ select:focus {
 
     .hond {
       padding-bottom: 27px;
+    }
+
+    .step4__question {
+      font-size: 11px;
     }
 
 }
