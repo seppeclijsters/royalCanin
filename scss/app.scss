@@ -295,6 +295,11 @@ html {
   min-height: 500px;
 }
 
+.container-special {
+  background-image: linear-gradient(#fff 200px, #F2F2F2);
+}
+
+
 .header__gradient {
     background-image: url('../assets/images/gradient.jpg');
     background-repeat: no-repeat;
@@ -786,8 +791,7 @@ html {
 
 .animals {
   position: relative;
-  // height: 321px;
-  padding: 50px 0 79px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,6 +830,10 @@ html {
 
 label {
   margin: 0;
+}
+
+input[type="radio"]:focus {
+  outline: none;
 }
 
 [type='checkbox']+label[for], [type='radio']+label[for] {
@@ -2020,7 +2028,7 @@ select:focus {
 .margin {
   // margin-top: 40px;
   margin-top: 13px;
-  // margin-bottom: 75px;
+  margin-bottom: 13px;
 }
 
 .margin__quiz-button {
@@ -2053,7 +2061,7 @@ select:focus {
 @media only screen and (max-width: 1025px) {
 
   .animals {
-    // height: 180px;
+    height: 180px;
   }
 
   .animals__cat {
@@ -2090,11 +2098,22 @@ select:focus {
       cursor: pointer;
     }
 
+    .loc-fr .step1__title {
+      font-size: 27px !important;
+    }
+
+    .margin {
+      margin-bottom: 70px;
+    }
+
+
     .container {
       min-height: calc(100vh - 39px);
+      background: white;
     }
 
     .container-special {
+      background-image: linear-gradient(#fff 200px, #F2F2F2);
       min-height: inherit;
     }
 
