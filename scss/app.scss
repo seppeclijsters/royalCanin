@@ -291,7 +291,7 @@ html {
 
 
 .container {
-  background-image: linear-gradient(white 60%, #F2F2F2);
+  background-image: linear-gradient(white 200px, #F2F2F2);
   min-height: 500px;
 }
 
@@ -1229,7 +1229,7 @@ input[type=submit]:focus {
 }
 
 .schiftings__input {
-  margin: 10px 0px 20px 0px !important;
+  margin: 10px 0px 10px 0px !important;
   border: 1px solid #D9D9D9;
   // margin-top: 10px;
   // margin-bottom: 20px;
@@ -2017,7 +2017,8 @@ select:focus {
 }
 
 .margin {
-  margin-top: 40px;
+  // margin-top: 40px;
+  margin-top: 13px;
   margin-bottom: 75px;
 }
 
@@ -2084,6 +2085,10 @@ select:focus {
 
 @media only screen and (max-width: 640px) {
 
+    body {
+      cursor: pointer;
+    }
+
     .container {
       min-height: calc(100vh - 39px);
     }
@@ -2105,27 +2110,15 @@ select:focus {
     }
 
     .step1__video {
-      // position: inherit;
       position: absolute;
       z-index: 1;
       bottom: 39px;
       max-width: 800px;
     }
 
-    // .step1__video-700 {
-    //   position: relative;
-    //   // z-index: 1;
-    //   // bottom: 39px;
-    //   // max-width: 1000px;
-    //   // left: 0;
-    // }
 
     .step1__video-900 {
       position: absolute;
-      // z-index: 1;
-      // bottom: 39px;
-      // max-width: 1000px;
-      // left: 0;
     }
 
     .step1__title {
@@ -2256,6 +2249,11 @@ select:focus {
     .buttons__style3 {
       margin-bottom: 71px;
     }
+
+    .hond {
+      padding-bottom: 27px;
+    }
+
 }
 
 @media only  screen and  (max-width: 540px)  {
@@ -2301,9 +2299,14 @@ select:focus {
  }
 }
 
+@media only screen and (max-width: 500px) {
+  .ras {
+    height: 100px !important;
+  }
+}
 
-.links {
-  background-color: white;
-  margin-top: 50px;
-  height: 85px;
+@media only screen and (max-width: 400px) {
+  .ras {
+    height: 80px !important;
+  }
 }
