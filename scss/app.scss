@@ -787,6 +787,7 @@ html {
 
 .animals__container {
   background-color: white;
+  padding-bottom: 50px;
 }
 
 .animals {
@@ -2062,7 +2063,7 @@ select:focus {
 
   .animals {
     height: 180px;
-    padding-bottom: 34px;
+    // padding-bottom: 34px;
   }
 
   .animals__cat {
