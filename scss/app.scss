@@ -394,13 +394,11 @@ html {
 }
 
 .footer {
-  // margin-top: 40px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  // position: relative;
-  // height: 35px;
+  z-index: 1;
   background-color: #F6F6F6;
 
   &__container {
@@ -2098,6 +2096,10 @@ select:focus {
 
     body {
       cursor: pointer;
+    }
+
+    .footer {
+      position: relative;
     }
 
     .loc-fr .step1__title {
