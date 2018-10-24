@@ -82,6 +82,6 @@ if ($('.ras').length) {
 }
 
 
-$('.ras').each(function(i) {
-  $(this).fadeOut(0).delay(100*i).fadeIn(400);
-});
+// $('.ras').each(function(i) {
+//   $(this).fadeOut(0).delay(100*i).fadeIn(400);
+// });
