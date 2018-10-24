@@ -796,6 +796,10 @@ html {
   align-items: center;
 }
 
+.animals-bedankt {
+  align-items: flex-start;
+}
+
 .animals__cat {
   position: absolute;
   left: 0;
@@ -1547,6 +1551,17 @@ input[type=submit]:focus {
   }
 }
 
+.pop-up__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+}
+
 .button__back {
   // background-color: #EC001A;
   border-radius: 50px;
@@ -1959,7 +1974,7 @@ select:focus {
 .buttons__style3 {
   cursor: pointer;
   width: 100%;
-  max-width: 185px;
+  max-width: 200px;
   border: 1px solid $red;
   height: 40px;
   border-radius: 30px;
@@ -2090,16 +2105,16 @@ select:focus {
     pointer-events: none;
   }
 
+  .opnieuw {
+    margin-top: 19px;
+  }
+
 }
 
 @media only screen and (max-width: 640px) {
 
     body {
       cursor: pointer;
-    }
-
-    .footer {
-      position: relative;
     }
 
     .loc-fr .step1__title {
@@ -2167,7 +2182,6 @@ select:focus {
 
     .step2__question {
       font-size: 11px;
-
     }
 
     .animals__cat {
@@ -2282,6 +2296,12 @@ select:focus {
       font-size: 11px;
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+  .step2__question {
+    letter-spacing: 1px;
+  }
 }
 
 @media only  screen and  (max-width: 540px)  {

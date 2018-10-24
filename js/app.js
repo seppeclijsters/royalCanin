@@ -37,11 +37,14 @@ y.addListener(myFunction2) // Attach listener function on state changes
 
 
 var popup = document.querySelector('.pop-up');
+var popup_background = document.querySelector('.pop-up__background');
 var popup_is_open = false;
 
 if ( console.log('code wanneer pop-up tevoorschijn moet komen') && popup_is_open ) {
   popup.classList.remove('hide');
   popup.classList.add('show');
+  popup_background.classList.add('show');
+  popup_background.classList.remove('hide');
   popup_is_open = false;
   console.log('show');
 }
@@ -55,6 +58,8 @@ document.addEventListener(`click`, e => {
       if($('.pop-up').length && !popup_is_open) {
         popup.classList.remove('show');
         popup.classList.add('hide');
+        popup_background.classList.remove('show');
+        popup_background.classList.add('hide');
         popup_is_open = true;
         console.log('hide');
       }
@@ -71,7 +76,12 @@ if ($('.ras').length) {
       breed_selected[i].addEventListener('click', function(event) {
         $('html, body').animate({
             scrollTop: $(".animals").offset().top
-        }, 800);
+        }, 300);
       });
   }
 }
+
+
+$('.ras').each(function(i) {
+  $(this).fadeOut(0).delay(100*i).fadeIn(400);
+});
