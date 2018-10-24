@@ -1562,6 +1562,56 @@ input[type=submit]:focus {
   height: 100%;
 }
 
+.pop-up__container {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  background: rgba(255,255,255,0.8);
+}
+
+.pop-up__container-height {
+  height: 100%;
+}
+
+.pop-up__game {
+  z-index: 2;
+  width: 90%;
+  height: auto;
+  background: #fff;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0px 10px 68px 1px rgba(0,0,0,0.15);
+  padding: 25px;
+  color: #333333;
+  max-width: 600px;
+  text-align: center;
+
+  &__title {
+    color: #47B800;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin: 10px 0 30px;
+
+  }
+
+  & p {
+    margin-bottom: .5rem;
+    line-height: 25px;
+
+    & a {
+      text-decoration: none;
+      text-decoration: underline;
+      color: #333333;
+    }
+  }
+}
+
 .button__back {
   // background-color: #EC001A;
   border-radius: 50px;
