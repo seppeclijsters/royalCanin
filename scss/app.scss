@@ -1595,7 +1595,7 @@ input[type=submit]:focus {
   height: 100vh;
 }
 
-.pop-up__game {
+.pop-up__meme {
   z-index: 2;
   width: 90%;
   height: auto;
@@ -1884,6 +1884,19 @@ select:focus {
 }
 
 // ------------------------------- BEDANKT -------------------------
+
+.centered-number {
+  font-family: 'Barlow', sans-serif;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  font-size: 200px;
+  color: #EC001A;
+}
+
 .schiftings {
   background-color: #F6F6F6;
   padding: 60px 0;
