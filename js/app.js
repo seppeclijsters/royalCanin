@@ -11,7 +11,6 @@ function myFunction(x) {
     if (x.matches && $('.step1').length) { // If media query matches
           video.classList.add('step1__video-900');
           video.classList.remove('step1__video');
-          console.log('groter dan 900');
     } else {
     }
 }
@@ -26,7 +25,6 @@ function myFunction2(y) {
     if (y.matches && $('.step1').length) { // If media query matches
           video.classList.remove('step1__video-900');
           video.classList.add('step1__video');
-          console.log('kleiner dan 900');
     } else {
     }
 }
@@ -46,7 +44,6 @@ if ( console.log('code wanneer pop-up tevoorschijn moet komen') && popup_is_open
   popup_background.classList.add('show');
   popup_background.classList.remove('hide');
   popup_is_open = false;
-  console.log('show');
 }
 
 // close pop-up when clicking next to pop-up
@@ -61,7 +58,6 @@ document.addEventListener(`click`, e => {
         popup_background.classList.remove('show');
         popup_background.classList.add('hide');
         popup_is_open = true;
-        console.log('hide');
       }
    }
 
@@ -80,10 +76,6 @@ if ($('.ras').length) {
       });
   }
 }
-
-
-
-// COOKIE POP-UP
 
 var cookie_is_open = false;
 
