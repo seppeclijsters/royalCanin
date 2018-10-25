@@ -82,6 +82,15 @@ if ($('.ras').length) {
 }
 
 
+var cookie_button = document.querySelector('.cookie__button');
+var cookie_container = document.querySelector('.cookie__container');
+cookie_button.addEventListener('click', function(e) {
+  e.preventDefault();
+  console.log('geklikt');
+  cookie_container.classList.add('hide-cookie');
+});
+
+
 // $('.ras').each(function(i) {
 //   $(this).fadeOut(0).delay(100*i).fadeIn(400);
 // });
