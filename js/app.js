@@ -82,15 +82,26 @@ if ($('.ras').length) {
 }
 
 
+
+// COOKIE POP-UP
+
+var cookie_is_open = false;
+
+document.addEventListener('click', function(){
+  if(!cookie_is_open) {
+    cookie_container.classList.add('show-cookie');
+    cookie_is_open = true;
+  }
+});
+
+
 var cookie_button = document.querySelector('.cookie__button');
 var cookie_container = document.querySelector('.cookie__container');
 cookie_button.addEventListener('click', function(e) {
   e.preventDefault();
-  console.log('geklikt');
-  cookie_container.classList.add('hide-cookie');
-});
-
-
-// $('.ras').each(function(i) {
-//   $(this).fadeOut(0).delay(100*i).fadeIn(400);
-// });
+  if (cookie_is_open) {
+    cookie_container.classList.remove('show-cookie');
+    cookie_container.classList.add('hide-cookie');
+    cookie_is_open = false;
+    }
+  })
