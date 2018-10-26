@@ -77,17 +77,17 @@ if ($('.ras').length) {
   }
 }
 
-var cookie_is_open = false;
-
-document.addEventListener('click', function(){
-  if(!cookie_is_open) {
-    cookie_container.classList.add('show-cookie');
-    cookie_is_open = true;
-  }
-});
-
-
 if ($('.cookie__button').length) {
+
+    var cookie_is_open = false;
+
+    document.addEventListener('click', function(){
+      if(!cookie_is_open) {
+        cookie_container.classList.add('show-cookie');
+        cookie_is_open = true;
+      }
+    });
+
     var cookie_button = document.querySelector('.cookie__button');
     var cookie_container = document.querySelector('.cookie__container');
     cookie_button.addEventListener('click', function (e) {
