@@ -38,7 +38,7 @@ var popup = document.querySelector('.pop-up');
 var popup_background = document.querySelector('.pop-up__background');
 var popup_is_open = false;
 
-if ( console.log('code wanneer pop-up tevoorschijn moet komen') && popup_is_open ) {
+if (popup_is_open ) {
   popup.classList.remove('hide');
   popup.classList.add('show');
   popup_background.classList.add('show');
@@ -91,9 +91,12 @@ var cookie_button = document.querySelector('.cookie__button');
 var cookie_container = document.querySelector('.cookie__container');
 cookie_button.addEventListener('click', function(e) {
   e.preventDefault();
-  if (cookie_is_open) {
-    cookie_container.classList.remove('show-cookie');
-    cookie_container.classList.add('hide-cookie');
-    cookie_is_open = false;
-    }
-  })
+
+  // Ajax request to set cookie.
+  var url = $('.cookie__button__link').attr('href');
+  $.get(url);
+
+  cookie_container.classList.remove('show-cookie');
+  cookie_container.classList.add('hide-cookie');
+  cookie_is_open = false;
+})
