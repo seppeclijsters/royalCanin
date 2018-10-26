@@ -77,26 +77,28 @@ if ($('.ras').length) {
   }
 }
 
-var cookie_is_open = false;
+if ($('.cookie__button').length) {
 
-document.addEventListener('click', function(){
-  if(!cookie_is_open) {
-    cookie_container.classList.add('show-cookie');
-    cookie_is_open = true;
-  }
-});
+    var cookie_is_open = false;
 
+    document.addEventListener('click', function(){
+      if(!cookie_is_open) {
+        cookie_container.classList.add('show-cookie');
+        cookie_is_open = true;
+      }
+    });
 
-var cookie_button = document.querySelector('.cookie__button');
-var cookie_container = document.querySelector('.cookie__container');
-cookie_button.addEventListener('click', function(e) {
-  e.preventDefault();
+    var cookie_button = document.querySelector('.cookie__button');
+    var cookie_container = document.querySelector('.cookie__container');
+    cookie_button.addEventListener('click', function (e) {
+        e.preventDefault();
 
-  // Ajax request to set cookie.
-  var url = $('.cookie__button__link').attr('href');
-  $.get(url);
+        // Ajax request to set cookie.
+        var url = $('.cookie__button__link').attr('href');
+        $.get(url);
 
-  cookie_container.classList.remove('show-cookie');
-  cookie_container.classList.add('hide-cookie');
-  cookie_is_open = false;
-})
+        cookie_container.classList.remove('show-cookie');
+        cookie_container.classList.add('hide-cookie');
+        cookie_is_open = false;
+    })
+}
