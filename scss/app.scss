@@ -1583,7 +1583,7 @@ input[type=submit]:focus {
 }
 
 .pop-up__container {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -1592,7 +1592,7 @@ input[type=submit]:focus {
 }
 
 .pop-up__container-height {
-  height: 100vh;
+  height: 100%;
 }
 
 .pop-up__game {
@@ -2254,6 +2254,12 @@ select:focus {
     margin-top: 19px;
   }
 
+}
+
+@media only screen and (max-width: 830px) {
+  .loc-fr .step1__title {
+    font-size: 39px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
