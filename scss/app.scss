@@ -223,6 +223,7 @@ body {
   font-family: 'Barlow', sans-serif;
   min-height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 html {
@@ -815,12 +816,24 @@ html {
 }
 
 .animals__dog {
+  // position: absolute;
+  // right: 0;
+  // top: 0;
+  // background-image: url(../assets/images/dog.png);
+  // height: 250px;
+  // width: 380px;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // mix-blend-mode: multiply;
+  // pointer-events: none;
+
   position: absolute;
-  right: 0;
-  top: 0;
-  background-image: url(../assets/images/dog.png);
-  height: 250px;
-  width: 380px;
+  right: -100px;
+  top: -91px;
+  background-image: url(../assets/images/dog2.png);
+  height: 273px;
+  width: 454px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: multiply;
@@ -2241,7 +2254,7 @@ select:focus {
     position: absolute;
     right: 0;
     top: 0px;
-    background-image: url(../assets/images/dog_tablet.png);
+    background-image: url(../assets/images/dog_tablet2.png);
     height: 155px;
     width: 252px;
     background-repeat: no-repeat;
