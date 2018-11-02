@@ -102,3 +102,16 @@ if ($('.cookie__button').length) {
         cookie_is_open = false;
     })
 }
+
+// --- JQUERY datepicker
+
+(function() {
+  var elem = document.createElement('input');
+  elem.setAttribute('type', 'date');
+
+  if ( elem.type === 'text' ) {
+    $( "#date" ).datepicker({
+      dateFormat: "dd-mm-yy"
+    });
+  }
+})();
