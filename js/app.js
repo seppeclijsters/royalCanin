@@ -48,7 +48,7 @@ if (popup_is_open ) {
 
 // close pop-up when clicking next to pop-up
 
-document.addEventListener(`click`, e => {
+document.addEventListener('click', function(e) {
   if (!$(".pop-up").is(e.target) // if the target of the click isn't the container...
   && $(".pop-up").has(e.target).length === 0) // ... nor a descendant of the container
     {
